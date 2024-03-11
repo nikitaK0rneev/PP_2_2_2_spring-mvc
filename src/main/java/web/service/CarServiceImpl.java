@@ -7,7 +7,7 @@ import web.model.Car;
 
 import java.util.List;
 
-@Component
+@Component("CarServiceImpl")
 public class CarServiceImpl implements CarService {
     private CarDao carDao;
 
@@ -16,7 +16,7 @@ public class CarServiceImpl implements CarService {
         this.carDao = carDao;
     }
 
-
+@Override
     public List<Car> getCarsByCount(int count) {
         return carDao.getCarsByCount(count);
     }
