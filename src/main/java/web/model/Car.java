@@ -3,9 +3,9 @@ package web.model;
 import java.util.Objects;
 
 public class Car {
-    private String model;
-    private int series;
-    private String color;
+    private final String model;
+    private final int series;
+    private final String color;
 
     public Car(String model, int series, String color) {
         this.model = model;
@@ -17,24 +17,12 @@ public class Car {
         return model;
     }
 
-    public void setModel(String model) {
-        this.model = model;
-    }
-
     public int getSeries() {
         return series;
     }
 
-    public void setSeries(int series) {
-        this.series = series;
-    }
-
     public String getColor() {
         return color;
-    }
-
-    public void setColor(String color) {
-        this.color = color;
     }
 
     @Override
